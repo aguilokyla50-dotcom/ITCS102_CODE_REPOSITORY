@@ -1,23 +1,30 @@
-money = 6897
+money = 8766
 
+thousand= money//1000
+money = money - thousand*1000
+fivehun = money//500
+money = money - fivehun*500
+twohun= money//200
+money = money - twohun*200
+onehun= money//100
+money = money - onehun*100
+fifty = money//50
+money = money  - fifty*50
+twenty = money//20
+money = money - twenty*20
+ten = money//10
+money = money - ten*10
+five = money//5
+money = money - five*5
+one = money//1
+money = money - one*1
 
-a =  1000
-b = 500
-c = 200
-d = 100
-e = 50 
-f = 20
-g = 10
-h = 5 
-i = 1
-
-print("money to deposite-->",money)
-print("1000 =",((6*a)/a))
-print("500 =",((1*a)/a))
-print("200 =",((1*a)/a))
-print("100 =",((1*a)/a))
-print("50 =",((1*a)/a))
-print("20 =",((2*a)/a))
-print("10 =",((0*a)/a))
-print("5 =",((1*a)/a))
-print("1=",((2*a)/a))
+print("1000 =",thousand )
+print("500 =",fivehun)
+print("200 =",twohun )
+print("100 =",onehun )
+print("50 =",fifty )
+print("20 =",twenty )
+print("10 =",ten )
+print("5 =",five )
+print("1 =",one )
