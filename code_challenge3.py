@@ -1,19 +1,49 @@
-Sender = input("What is your name? = ")
-
-Type_of_Item = input("What type of item did you order? = ")
-
-isfragile = bool(input(" Is your order fragile? = "))
-
-
-if isfragile == True:
-	print(" be careful baka mahulog")
-
-else:
-	print("edi ikaw na ang taugh")
-
-Weight = float(input("How heavy(KG) is your order? = "))
-
-distance = float(input(" how far is the destination?"))
+Sender_Name = input("Name of Sender? --> ")
+Type_of_Item = input("What type of Item did you order? ---> ")
+Is_Fragile = bool(input("Is your order Fragile? (Enter \"YES\" if True and press Enter if False) ---> "))
+weight = float(input("How heavy is the Weight of the object? (in kg) ---> "))
+distance = float(input("How far is the destination(In km) ---- > "))
+is_express = bool(input("Express? (Enter \"YES\" if True and press Enter if False) --> "))
+is_international = bool(input("International? (Enter \"YES\" if True and  press Enter if False) --> "))
 
 
 
+# Calculating base cost
+
+base_cost = (weight * 2.5) + (distance * .15)
+
+#Free shipping
+
+
+if  weight <= 2 and distance <= 100 and is_express == False and is_international == False :
+	print("Free Shipping!!")
+	Total = 0
+	
+
+#International Express
+
+elif is_international == True and is_express == True :
+	print("Package is International is applied")
+	Total = (base_cost * 1.4) + 50
+
+#Express or Heavy International
+
+elif is_express == True or (is_international == True and weight > 20) : 
+	print("Package is Express or Heavy International is applied")
+	Total = (base_cost * 1.2) + 25
+
+#Oversized
+elif weight > 30 or distance > 1000 : 
+	print("Oversized is applied")
+	Total = base_cost + 30
+#Standard rate
+
+else :
+	Total = base_cost
+	print("Standard rate is applied")
+
+
+print("--------------------------")
+print("Name of the sender : ", Sender_Name)
+print("Type of Item : ", Type_of_Item )
+print("Total Output  : PHP ", Total)
