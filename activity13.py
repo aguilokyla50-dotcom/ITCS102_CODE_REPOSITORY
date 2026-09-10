@@ -1,4 +1,8 @@
+name = input("YOUR NAME--->")
+
 age = int(input( "Input Age --->  "))
+
+
 
 if age >= 1 and age <= 5:
 	print("INFANT")
@@ -23,4 +27,4 @@ elif age >= 60 and age <= 150:
 
 
 else:
-	print (" INVALID")
+	print ("OA mo teh,sino ka si emre???")
