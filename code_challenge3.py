@@ -42,8 +42,21 @@ else :
 	Total = base_cost
 	print("Standard rate is applied")
 
+ShippingFee = Total - base_cost
 
-print("--------------------------")
-print("Name of the sender : ", Sender_Name)
-print("Type of Item : ", Type_of_Item )
-print("Total Output  : PHP ", Total)
+
+print("------------------------------")
+print("KYLA'S DELIVERING COMPANY")
+print("Name: ", Sender_Name)
+print("ITEM: ", Type_of_Item)
+print("WEIGHT: ", weight)
+print("DISTANCE: ",distance)
+print("FRAGILE???: ",Is_Fragile)
+print("INTERNATIONAL?: ", is_international)
+print("EXPRESS?: ", is_express)
+print("TOTAL SHIPPING COST: PHP ", ShippingFee)
+print("Total: PHP ", Total)
+print("-------------------------------")
+
+
+
