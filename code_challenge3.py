@@ -46,7 +46,7 @@ else :
 ShippingFee = total - base_cost
 
 
-print("=================================")
+print("==============================================")
 print("KYLA'S DELIVERING COMPANY")
 print("Name: ", Sender_Name)
 print("ITEM: ", Type_of_Item)
@@ -57,10 +57,12 @@ print("INTERNATIONAL?: ", is_international)
 print("EXPRESS?: ", is_express)
 print("TOTAL SHIPPING COST: PHP ", ShippingFee)
 print("Total: PHP ", total)
-print("================================")
+print("=============================================")
 
-print("Thank you so much for purchasing from us! We truly appreciate your support. We hope you love your purchase!")
-("Thank you for choosing our small business!")
+print("Thank you so much for purchasing from us!")
+print("We truly appreciate your support.")
+print("We hope you love your purchase!")
+print("Thank you for choosing our small business!")
 
 
 
