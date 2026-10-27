@@ -11,7 +11,7 @@ cv = float(input("Collateral value--->"))
 max_loan = 0 
 base_fee = 0
 
-if age >= 21 and yrs >= 2.0 and hd == False:
+if age >= 21 and yib >= 2.0 and hd == True :
     print("BASELINE CRITERIA PASSED")
     if cs >= 720: # tier 1
         max_loan = rev * 3
@@ -24,7 +24,7 @@ if age >= 21 and yrs >= 2.0 and hd == False:
         else:
             print("REVENUE LOWER THAN 50K")
             base_fee = max_loan * 0.025
-            print("BASE FEE RATE IS SET TO"base_)
+            print("BASE FEE RATE IS SET TO", base_fee)
 
     elif cs >= 620 and cs < 720: # tier 2
         print(" credit score within the range of 620 to 720")
